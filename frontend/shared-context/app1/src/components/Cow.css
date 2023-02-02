@@ -1,0 +1,125 @@
+.CowGrid {
+    display: inline-grid;
+    width: 96%;
+    height: 12vh;
+    grid-template-columns: 10% 20% 10% 40% 20%;
+    background-color: var(--constrastcolor);
+    margin-top: 2vh;
+    margin-left: 2%;
+    border-radius: 20px;
+}
+
+img {
+    height: 100%;
+    border-radius: 20px;
+}
+
+.CowName {
+    width: 99%;
+    margin: auto;
+    color: var(--textcolor);
+    font-size: 1.5em;
+    font-family: sans-serif;
+}
+
+.CowLevel {
+    width: 50%;
+    margin: auto;
+    color: var(--textcolor);
+    font-size: 1em;
+    font-family: sans-serif;
+}
+
+.CowNextMilked {
+    width: 50%;
+    margin: auto;
+    color: var(--textcolor);
+    font-family: sans-serif;
+}
+
+
+.CowButton {
+  display: flex;
+  overflow: hidden;
+
+  width: 80%;
+
+  margin: 10px;
+  padding: 12px 12px;
+
+  cursor: pointer;
+  user-select: none;
+  transition: all 150ms linear;
+  text-align: center;
+  white-space: nowrap;
+  text-decoration: none !important;
+  text-transform: none;
+  text-transform: capitalize;
+
+  color: var(--textwhite);
+  border: 0 none;
+  border-radius: 36px;
+
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.3;
+
+ 
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 160px;
+
+
+  background-color: var(--textcolor);
+}
+
+.CowButton:disabled {
+    display: flex;
+    overflow: hidden;
+  
+    width: 80%;
+  
+    margin: 10px;
+    padding: 12px 12px;
+  
+    cursor: pointer;
+    user-select: none;
+    transition: all 150ms linear;
+    text-align: center;
+    white-space: nowrap;
+    text-decoration: none !important;
+    text-transform: none;
+    text-transform: capitalize;
+  
+    color: var(--textwhite);
+    border: 0 none;
+    border-radius: 36px;
+  
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.3;
+  
+   
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 160px;
+  
+  
+    background-color: red;
+    cursor: not-allowed;
+  }
+
+.CowButton:hover {
+    transition: all 150ms linear;
+    opacity: .85;
+  }
+  
+  .CowButton:active {
+    transition: all 150ms linear;
+    opacity: .75;
+  }
+  
+  .CowButton:focus {
+    outline: 1px dotted #959595;
+    outline-offset: -4px;
+  }

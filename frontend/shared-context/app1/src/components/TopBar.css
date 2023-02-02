@@ -1,0 +1,8 @@
+.TopBar {
+    height: 10%;
+    background-color: var(--constrastcolor);
+}
+
+.p {
+    margin: 0;
+}

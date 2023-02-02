@@ -1,0 +1,8 @@
+.HomePageGrid {
+    width: 98%;
+    display: inline-grid;
+    grid-template-columns: 32% 62%;
+    grid-gap: 4%;
+    padding-left: 2%;
+    margin-top: 2vh;
+}

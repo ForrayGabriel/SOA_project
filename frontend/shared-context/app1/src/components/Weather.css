@@ -1,0 +1,18 @@
+.Weather {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
+    color: white;
+    height: 10vh;
+    width: 96%;
+    margin-top: 2vh;
+    margin-left: 2%;
+    border-radius: 20px;
+}
+
+#image {
+    width: 5vh;
+    height: 5vh;
+}

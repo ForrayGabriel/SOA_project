@@ -1,0 +1,133 @@
+.BuyCow {
+    width: 100%;
+    height: 10vh;
+    grid-template-columns: repeat(5, 20%);
+    background-color: var(--constrastcolor);
+    border-radius: 20px;
+    display: inline-grid;
+    grid-template-columns: repeat(3, 33%);
+    justify-content: center;
+}
+
+.grid_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.CowBuyName {
+    color: #fff;
+}
+
+.CowBuyInput {
+    height: 80%;
+    width: 80%;
+    margin: 10px;
+    padding: 12px 12px;
+
+    cursor: pointer;
+    user-select: none;
+    transition: all 150ms linear;
+    text-align: center;
+    white-space: nowrap;
+    text-decoration: none !important;
+    text-transform: none;
+
+    color: #fff;
+    background-color: var(--textcolor);
+    border: 0 none;
+    border-radius: 36px;
+
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.3;
+
+
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 160px;
+}
+
+.CowBuyButton {
+    display: flex;
+    overflow: hidden;
+
+    margin: 10px;
+    padding: 12px 12px;
+
+    cursor: pointer;
+    user-select: none;
+    transition: all 150ms linear;
+    text-align: center;
+    white-space: nowrap;
+    text-decoration: none !important;
+    text-transform: none;
+    text-transform: capitalize;
+
+    color: #fff;
+    background-color: var(--textcolor);
+    border: 0 none;
+    border-radius: 36px;
+
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.3;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 160px;
+
+}
+
+.CowBuyButton:disabled {
+    display: flex;
+    overflow: hidden;
+
+    margin: 10px;
+    padding: 12px 12px;
+
+    user-select: none;
+    transition: all 150ms linear;
+    text-align: center;
+    white-space: nowrap;
+    text-decoration: none !important;
+    text-transform: none;
+    text-transform: capitalize;
+
+    color: var(--textwhite);
+    border: 0 none;
+    border-radius: 36px;
+
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.3;
+
+
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 160px;
+
+
+    background-color: red;
+    cursor: not-allowed;
+}
+
+
+.CowBuyButton:hover {
+    transition: all 150ms linear;
+    opacity: .85;
+}
+
+.CowBuyButton:active {
+    transition: all 150ms linear;
+    opacity: .75;
+}
+
+.CowBuyButton:focus {
+    outline: 1px dotted #959595;
+    outline-offset: -4px;
+}

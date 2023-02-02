@@ -1,0 +1,11 @@
+:root {
+    --backgroundcolor: #7DB927;
+    --constrastcolor: #FECE44;
+    --textcolor: #964B00;
+    --textwhite: #fff;
+  }
+
+body {
+    background-color: var(--backgroundcolor);
+    margin: 0;
+}

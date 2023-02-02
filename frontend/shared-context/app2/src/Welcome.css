@@ -1,0 +1,27 @@
+.MainGrid {
+    display: inline-grid;
+    width: 100%;
+    grid-template-columns: 50% 25% 25%
+}
+
+
+.Title {
+    font-size: 2em;
+    color: var(--textcolor);
+    margin-top: 0;
+    margin-left: 5%;
+    font-family: sans-serif;
+}
+
+.Ressource {
+    height: 80%;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+    background-color: var(--textcolor);
+    color: var(--textwhite);
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+
+}
