@@ -17,7 +17,6 @@ export class My_Controller {
     const money_pattern = { cmd: 'changeMoney' };
     
     let Cows = await this.cow_client.send<any>(get_pattern, "").pipe(first()).toPromise();
-    console.log('Cows', Cows.length);
     let money_amount = await this.ressource_client.send<number>(money_pattern, -Cows.length*1000).pipe(first()).toPromise();
 
     if(money_amount != -1){

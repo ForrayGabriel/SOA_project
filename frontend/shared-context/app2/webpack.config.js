@@ -35,7 +35,7 @@ module.exports = {
       name: 'app2',
       filename: 'remoteEntry.js',
       exposes: {
-        './Welcome': './src/Welcome',
+        './SharedTopBar': './src/SharedTopBar',
       },
       shared: [
         'react',

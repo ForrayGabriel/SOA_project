@@ -31,6 +31,5 @@ export class AppService {
 
   async addMilk(milkAmount: number) {
     const response = await this.httpService.post('http://localhost:3000/milk', {amount: milkAmount}).toPromise();
-    console.log(response.data);
   }
 }

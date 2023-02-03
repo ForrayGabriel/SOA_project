@@ -1,10 +1,10 @@
 import { NameContextProvider } from '@shared-context/shared-library';
 import React from 'react';
 
-import css from "./Welcome.css";
+import css from "./SharedTopBar.css";
 
 
-const Welcome = () => {
+const SharedTopBar = () => {
   const name = React.useContext(NameContextProvider);
 
   return <div className='MainGrid'>
@@ -20,4 +20,4 @@ const Welcome = () => {
   </div>;
 };
 
-export default Welcome;
+export default SharedTopBar;

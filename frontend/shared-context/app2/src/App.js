@@ -1,13 +1,13 @@
 import { NameContextProvider } from '@shared-context/shared-library';
 import React from 'react';
-import Welcome from './Welcome';
+import SharedTopBar from './SharedTopBar';
 
 const App = () => (
   <div>
     <h1>Context Provider</h1>
     <h2>App 2</h2>
     <NameContextProvider.Provider value="Susan">
-      <Welcome />
+      <SharedTopBar />
     </NameContextProvider.Provider>
   </div>
 );

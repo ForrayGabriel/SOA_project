@@ -53,7 +53,6 @@ export class AppController {
     console.log('Selling Milk', data);
     let milk = await (await this.appService.findAll()).filter((ressource) => ressource.name === 'Milk')[0];
     let money = await (await this.appService.findAll()).filter((ressource) => ressource.name === 'Money')[0];
-    // Transform string to int
     money.value = money.value + milk.value*data;
     milk.value = 0;
     await this.appService.update(milk);

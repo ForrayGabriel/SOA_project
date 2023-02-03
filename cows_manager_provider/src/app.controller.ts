@@ -35,15 +35,9 @@ export class AppController {
   async milkCow(id: number): Promise<number> {
     console.log('Milking a cow');
     const cow = await this.appService.findOne(id);
-    console.log(new Date().getTime() - cow.last_milked.getTime());
     cow.last_milked = new Date();
     this.appService.update(cow);
     return cow.level
   }
 
-
-  @EventPattern('sum-event')
-  async handleUserCreated(data: Record<string, unknown>) {
-    console.log('sum-event', data);
-  }
 }

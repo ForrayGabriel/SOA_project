@@ -9,7 +9,7 @@ import Weather from '../components/Weather';
 import css from './HomePage.css';
 import BuyCow from '../components/BuyCow';
 
-const TopBarIn = React.lazy(() => import('app2/Welcome'));
+const TopBarIn = React.lazy(() => import('app2/SharedTopBar'));
 
 function HomePage() {
 
@@ -32,7 +32,7 @@ function HomePage() {
       setCowPrice(response.data.length * 1000);
       return response.data;
     }).catch(function (error) {
-      console.log("Premiere errueru", error);
+      console.log(error);
     });
     const milk_response = await axios.get("http://localhost:3000/milk").then(function (response) {
       setMilk(response.data)
@@ -51,7 +51,7 @@ function HomePage() {
       fetchData()
         .then((res) => { })
         .catch((e) => {
-          console.log("ERROR", e.message)
+          console.log(e.message)
         });
     }, 100);
     return () => clearInterval(interval);
